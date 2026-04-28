@@ -22,7 +22,7 @@ st.markdown(f"""
         }}
         
         [data-testid="stAppViewContainer"]::before {{
-            content: "";
+            content: "";F
             position: absolute;
             top: 0; left: 0; width: 100%; height: 100%;
             background-color: rgba(0, 0, 0, 0.7);
@@ -103,7 +103,7 @@ def obter_segundas():
     return [(prox + timedelta(weeks=i)).strftime("%d/%m/%Y") for i in range(12)]
 
 # --- INTERFACE ---
-st.sidebar.title("🏟️ Arena Racha)
+st.sidebar.title("🏟️ Arena Racha")
 menu = ["Escalação Automática", "Lançar Pontos", "Histórico de Partidas", "Tabela e Pódio", "Ver Atletas", "Cadastrar Atletas", "Gerenciar Elenco"]
 escolha = st.sidebar.selectbox("Navegação", menu)
 
